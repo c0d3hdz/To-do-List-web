@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+    padding: 20px 0 0 0;
+}
+header{
+    text-align: center;
+    background-color: #575757;
+    padding: 20px 0 20px 0;
+}
+.input-container input[type=text]{
+    padding: 6px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: none;
+    border-left: solid 1px #a8a8a8;
+    border-top: solid 1px #a8a8a8;
+    border-bottom: solid 1px #a8a8a8;
+}
+.input-container button.addTask{
+    padding: 6px;
+    border: none;
+    border-right: solid 1px #a8a8a8;
+    border-top: solid 1px #a8a8a8;
+    border-bottom: solid 1px #a8a8a8;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px ;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.taskList{
+    margin: 40px 0 40px 0;
+    width: 40vw;
+    position: relative;
+    left: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mi-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 20px 10px 20px 10px;
+    border: solid 1px #575757;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+button.borrarTarea{
+    border: solid 1px rgb(156, 156, 156);
+    background-color: transparent;
+    width: fit-content;
+    cursor: pointer;
+    font-size: large;
+    background-color: rgb(131, 131, 131);
+    color:#575757 ;
+}
+button.borrarTarea:hover{
+    transition-duration: 0.2s;
+    scale: 1.1;
+    background-color: rgb(140, 228, 10);
+}
+button.borrarTarea{
+    transition-duration: 0.5s;
+    scale: 1;
+}
+.tarea{
+    padding: 5px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.fechata{
+    padding: 5px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+@media (max-width: 768px) {/* Media para telefonos  */
+    .taskList{
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+}
